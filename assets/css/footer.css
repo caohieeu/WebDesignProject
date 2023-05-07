@@ -1,0 +1,89 @@
+.footer-contact {
+    padding-top: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.infor_name{
+    color:white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    list-style: none;
+}
+.infor_name:hover{
+    color:#fff;
+}
+
+.useful_link{
+    width: 270px;
+    text-align: left;
+}
+
+.useful_link ul {
+    padding-left: 0;
+}
+
+.useful_link ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-right: 20px;
+    line-height: 30px;
+}
+.useful_link ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    cursor: pointer;
+}
+
+#footer{
+    margin-top: 120px;
+    color: #fff;
+    background-color: #3a4468;
+}
+
+.input_email{
+    padding: 15px 15px;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.button_subcribe{
+    background-color: #f3c93e;
+    border: none;
+    height: 40px;
+    width: 150px;
+    color:white;
+}
+
+.social_icon{
+    display: flex;
+    margin-top: 30px;
+    width: 200px;
+    justify-content: flex-start;
+}
+.social_icon > a{
+    color:white;
+}
+.social_icon > a > i{
+    font-size: 28px;
+    margin-right: 20px;
+}
+
+.hr_end{
+    height: 15px;
+    width: 75%;
+    margin-left: 225px;
+    color: white;
+}
+
+.container_end{
+    height: 50px;
+    width: 100%;
+}
+
+.text_end{
+    text-align: center;
+}

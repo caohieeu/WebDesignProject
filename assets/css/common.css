@@ -1,0 +1,144 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*cart section*/
+#js-cart {
+    position: relative;
+}
+.js-cart-modal {
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    width: 550px;
+    background-color: #fff;
+    box-shadow: 0 0 6px #888;
+    border-radius: 4px;
+    padding: 15px;
+    display: none;
+    animation: modalFadein ease-in-out 0.5s;
+    z-index: 100;
+    position: fixed;
+}
+
+.js-cart-modal .title-cart {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+    float: left;
+}
+
+.js-cart-modal .title-list {
+    margin-top: 20px;
+    float: right;
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+.js-cart-modal .title-list p{
+    padding-left: 45px;
+    margin-bottom: 5px;
+}
+
+.js-cart-modal .title-list p:first-child{
+    padding-right: 25px;
+}
+
+.js-cart-modal i {
+    float: right;
+    font-size: 20px;
+    padding: 8px;
+}
+
+.js-cart-modal i:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.js-cart-modal img {
+    width: 100%;
+}
+
+.open {
+    display: block;
+}
+
+table {
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  th, td {
+    padding: 10px;
+    font-size: 13px;
+  }
+  thead {
+    background-color: #888;
+    color: #fff;
+  }
+  .total-products {
+    font-weight: bold;
+    font-size: 25px;
+    color: green;
+  }
+
+.js-remove-item {
+    float: left !important;
+    color: #fff;
+    background-color: red;
+}
+
+.container-products {
+    max-height: 350px;
+    overflow-y: scroll;
+}
+
+.footer-cart-modal {
+    padding-bottom: 20px;
+}
+
+.js-footer-modal-close {
+    float: left;
+    background-color: #888;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.js-footer-modal-close:hover, .checkout:hover {
+    opacity: 0.6;
+}
+
+.checkout {
+    float: right;
+    background-color: rgb(44 167 68);
+    color: #fff;
+    padding: 6px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@keyframes modalFadein {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

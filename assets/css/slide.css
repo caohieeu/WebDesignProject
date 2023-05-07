@@ -1,0 +1,69 @@
+.slideshow_section{
+    width: 100%;
+    height: 600px;
+    background-color: #f7f7f7;
+}
+.detail-box > h1{
+    margin-top: 190px;
+    color: #3a4468;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.detail-box > p{
+    color: #6d6d6d;
+    font-size: 20px;
+}
+.img_box{
+    float: right;
+    margin-top: 50px;
+}
+.readmore_1{
+    background-color: #f3c93e;
+    color: white;
+    font-weight: 700;
+    height: 45px;
+    width: 180px;
+    border: 1px solid #f3c93e;
+    margin-top:15px;
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.readmore_1:hover{
+    border: 1px solid #f3c93e;
+    background-color: transparent;
+    color: #f3c93e;
+}
+
+.carousel_btn_box{
+    display: flex;
+    margin-top: 10px;
+}
+.control_prev{
+    margin-right: 5px;
+}
+.control_prev, .control_next, .control_start, .control_stop{
+    margin-left: 20px;
+    background-color: #3a4468;
+    width: 50px;
+    height: 50px;
+    position: unset;
+    font-size: 18px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.control_prev:hover, .control_next:hover,.control_start:hover, .control_stop:hover{
+    background-color: #f3c93e;
+    transition: all 0.5s;
+}

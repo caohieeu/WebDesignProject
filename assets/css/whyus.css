@@ -1,0 +1,80 @@
+.why_us_section {
+    margin-top: 120px;    
+}
+
+.why-content {
+    margin-top: 50px;
+}
+
+.why-content .why-item {
+    width: 360px;
+    box-shadow: 0px 0px 5px rgb(201, 195, 195);
+}
+
+.why-content .why-item .img-box-why{
+    height: 90px;
+}
+
+.why-content .why-item .img-box-why img{
+    height: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    -webkit-filter: brightness(0);
+    filter: brightness(0);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.why-content .why-item:hover .img-box-why img {
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+}
+
+.why-content p {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.why-content p:last-child {
+    padding-bottom: 25px;
+}
+
+.why-us-comment {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.why-us-comment-text {
+    margin-top: 40px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.29);
+    padding: 40px 30px;
+}
+
+.why-us-comment-text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.why-us-comment .commentator {
+    margin-top: 50px;
+}
+
+.why-us-comment .commentator img{
+    float: left;
+    border: 10px solid #f3c93e;
+    width: 20%;
+}
+
+.why-us-comment .commentator h5, h6{
+    float: left;
+    width: 80%;
+    margin-left: 20px;
+    transform: translateY(70px);
+}
+
+.commentator .avatar img{
+    width: 10%;
+}

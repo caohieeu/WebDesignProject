@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "productName": "Cannon EOS 550D",
+        "image": "/images/MayAnh.png",
+        "price": 300
+    },
+    {
+        "id": "2",
+        "productName": "IPega 9021 Bluetooth Gamepad",
+        "image": "/images/TayCam.png",
+        "price": 400
+    },
+    {
+        "id": "3",
+        "productName": "Flycam DJI Tello",
+        "image": "/images/FlyCam.png",
+        "price": 200
+    },
+    {
+        "id": "4",
+        "productName": "Canon EF 50mm",
+        "image": "/images/Camera.png",
+        "price": 500
+    },
+    {
+        "id": "5",
+        "productName": "Yamaha HS7 Monitor Speaker",
+        "image": "/images/Loa.png",
+        "price": 100
+    },
+    {
+        "id": "6",
+        "productName": "HEYAPAN 2.4G Gamepad",
+        "image": "/images/TayGame.png",
+        "price": 300
+    },
+    {
+        "id": "7",
+        "productName": "UAV RTK Phantom 4",
+        "image": "/images/Phantom.png",
+        "price": 200
+    },
+    {
+        "id": "8",
+        "productName": "Canon EOS 2000D Camera",
+        "image": "/images/2000Camera.png",
+        "price": 300
+    },
+    {
+        "id": "9",
+        "productName": "CC Camera",
+        "image": "/images/CCCamera.png",
+        "price": 250
+    }
+]

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="./images/logo_tkw.png"/>
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/ProductDetail.css">
+	<link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <title>ProductDetail</title>
+</head>
+<body>
+    
+     <!--heading section-->
+  <header id="header">
+	<div class="header_top">
+		<div class="fluid">
+			<div class="contact">
+				<a href="#">
+					<i class="fa-solid fa-phone" style="color: #f3c93e;"></i>
+					<span >Call: +01 12345678910JQK</span>
+				</a>
+				<a href="#">
+					<i class="fa-solid fa-envelope" style="margin-left: 10px; color: #f3c93e;"></i>
+					<span>Email: phucdeptrai@gmail.com</span>
+				</a>
+			</div>
+			<div class="form">
+				<form  class="search_form">
+					<input type="text" class="form_control" placeholder="Search here...">
+					<button class="submit_search" type="submit">
+						<i id="icon_search" class="fa-solid fa-magnifying-glass"></i>
+					</button>
+				</form>
+			</div>
+			<div class="user_agent">
+				<a href="#">
+					<i style="margin-right: 10px; color: #f3c93e;" class="fa-solid fa-user"></i>
+					<span style="margin-right: 20px;">MY ACCOUNT</span>
+				</a>
+				<a id="js-cart" style="color: #fff;">
+					<i class="fa-sharp fa-solid fa-cart-shopping" style="margin-right: 10px;color: #f3c93e;"></i>
+					<span>CART</span>
+				</a>	
+				<!--cart section-->
+				<div class="js-cart-modal">
+					<div class="title-cart">Shopping Cart</div>
+					<i class="js-modal-close fa-solid fa-xmark"></i>
+					<div style="clear:both"></div>
+					<div class="container-products">
+						<table>
+						<thead>
+						  <tr>
+							<th style="text-align: center;" colspan="2">Product</th>
+							<th>Price</th>
+							<th>Quantity</th>
+							<th>Total</th>
+							<th>Action</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <!-- Content of Cart Table -->
+						</tbody>
+						<tfoot id="total-products"></tfoot>
+					  </table>
+					</div>
+					  <div class="footer-cart-modal">
+							<div class="js-footer-modal-close">Close</div>
+							<div class="checkout" href="#">Checkout</div>
+					  </div>
+					</div>
+			<!--cart section-->
+			</div>
+		</div>
+	</div>
+	<div class="hearder_bottom">
+			
+		<div class="Text_Logo" style="clear:both">
+			
+			<a href="#">
+				<span>Minics</span>
+			</a>
+		</div>
+		<div class="menu" style="margin-top: 10px;">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-home" href="./index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-about" href="./about.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-products" href="./products.html">Products</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-whyus" href="./whyus.html">Why Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-testimonial" href="#footer">Testimonial</a>
+				</li>
+			</ul>
+			<div style="clear:both"></div>
+		</div>
+	</div>
+</header>
+
+    <div class="dtproduct p-5" style="margin-top: 120px;">
+        <div class="row mt-5">
+            <div class="col-5">
+                <div class="img-box">
+                    <img class="img-product" alt="">
+                </div>
+                <div class="row m-0">
+                    <div class="col-lg-3 img-box-child">
+                        <img class="img-product-child" alt="">
+                    </div>
+                    <div class="col-lg-3 img-box-child">
+                        <img class="img-product-child" alt="">
+                    </div>
+                    <div class="col-lg-3 img-box-child">
+                        <img class="img-product-child" alt="">
+                    </div>
+                    <div class="col-lg-3 img-box-child">
+                        <img class="img-product-child" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <h3 class="name-product">Product name</h3>
+                <h2 class="price-product">$300.00</h2>
+                <select class="my-3 select">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                </select>
+                <br>
+                <input type="number" value="1" style="width: 40px; height: 40px;">
+                <button class="add-to-cart">Add to cart </button>
+                <h4 class="mt-5 mb-5">Product details</h4>
+                <span>
+                    Play your favorite games on PS5 and PS4 consoles, 
+                    pause the action and switch to another device without being tied to the TV. 
+                    PS Remote Play is available on Android smartphones and tablets, iPhone or iPad, 
+                    Windows PC and Mac, as well as your PS5 and PS4 consoles.
+                </span>
+            </div>
+        </div>
+    </div>
+
+     <!--footer section-->
+     <div id="footer" style="height: 450px; width: 100%; background-color: #3a4468;">
+        <div class="footer-contact row d-flex justify-content-center">
+			<div class="infor_section col-md-3">
+				<h5>
+					<a class="infor_name" href="#">
+						<span>Minincs</span>
+					</a>
+				</h5>
+				<p>
+					<i class="fa-solid fa-location-dot"></i> Address 
+				</p>
+				<p>
+					<i class="fa-solid fa-phone"></i> +12345678910JQK
+				</p>
+				<p>
+					<i class="fa-solid fa-envelope"></i> phucdeptrai@gmail.com
+				</p>
+			</div>
+			<div class="information col-md-3">
+				<h5 style="font-size: 25px; ">Information</h5>
+				<p>
+					Eligendi sunt, provident, debitis nemo, facilis cupiditate velit libero dolorum aperiam enim nulla iste maxime corrupti ad illo libero minus.</p>
+			</div>
+			<div class="useful_link col-md-3">
+				<h5 style="font-size: 25px">Useful Link</h5>
+				<ul>
+					<li>
+						<a href="#">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							About
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Products
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Why Us
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Testimonial
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="info_form col-md-3">
+				<h5 style="font-size: 25px;">Newsletter</h5>
+				<form action="">
+					<input class="input_email" type="email" placeholder="Enter your email" >
+				</form>
+				<button class="button_subcribe">SUBCRIBE</button>
+				<div class="social_icon">
+					<a href="#">
+						<i class="fa-brands fa-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-youtube"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+        <div style="clear:both"></div>
+        <div class="the_end">
+            <hr class="hr_end">
+            <div class="container_end">
+                <p class="text_end"><i class="fa-sharp fa-solid fa-copyright"></i><span> 2023 All Rights Reserved By Free Html Templates</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/productDetail.js"></script>
+	<script>
+	function updateInfo() {
+		var id = localStorage.getItem('id');
+		var nameProduct = document.querySelector('.name-product');
+		var priceProduct = document.querySelector('.price-product');
+		fetch('data.json')
+		.then(res => res.json())
+		.then(data => {
+			const idNumber = id[id.length - 1] * 1;
+			const product = data[idNumber - 1];
+			nameProduct.innerHTML = product.productName;
+			priceProduct.innerHTML = `$${product.price}`;
+		})
+		.catch(err => console.error(err));
+	};
+	updateInfo();
+	</script>
+</body>
+</html>

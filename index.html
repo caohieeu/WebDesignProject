@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="shortcut icon" type="image/png" href="./images/logo_tkw.png"/>
+  <link rel="stylesheet" href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/about.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="stylesheet" href="./assets/css/products.css">
+  <link rel="stylesheet" href="./assets/css/whyus.css">
+  <link rel="stylesheet" href="./assets/css/slide.css">
+</head>
+<body>
+
+  <!--heading section-->
+  <header id="header">
+	<div class="header_top">
+		<div class="fluid">
+			<div class="contact">
+				<a href="#">
+					<i class="fa-solid fa-phone" style="color: #f3c93e;"></i>
+					<span >Call: +01 12345678910JQK</span>
+				</a>
+				<a href="#">
+					<i class="fa-solid fa-envelope" style="margin-left: 10px; color: #f3c93e;"></i>
+					<span>Email: phucdeptrai@gmail.com</span>
+				</a>
+			</div>
+			<div class="form">
+				<form  class="search_form">
+					<input type="text" class="form_control" placeholder="Search here...">
+					<button class="submit_search" type="submit">
+						<i id="icon_search" class="fa-solid fa-magnifying-glass"></i>
+					</button>
+				</form>
+			</div>
+			<div class="user_agent">
+				<a href="#">
+					<i style="margin-right: 10px; color: #f3c93e;" class="fa-solid fa-user"></i>
+					<span style="margin-right: 20px;">MY ACCOUNT</span>
+				</a>
+				<a id="js-cart" style="color: #fff;">
+					<i class="fa-sharp fa-solid fa-cart-shopping" style="margin-right: 10px;color: #f3c93e;"></i>
+					<span>CART</span>
+				</a>	
+				<!--cart section-->
+				<div class="js-cart-modal">
+					<div class="title-cart">Shopping Cart</div>
+					<i class="js-modal-close fa-solid fa-xmark"></i>
+					<div style="clear:both"></div>
+					<div class="container-products">
+						<table>
+						<thead>
+						  <tr>
+							<th style="text-align: center;" colspan="2">Product</th>
+							<th>Price</th>
+							<th>Quantity</th>
+							<th>Total</th>
+							<th>Action</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <!-- Content of Cart Table -->
+						</tbody>
+						<tfoot id="total-products"></tfoot>
+					  </table>
+					</div>
+					  <div class="footer-cart-modal">
+							<div class="js-footer-modal-close">Close</div>
+							<div class="checkout" href="#">Checkout</div>
+					  </div>
+					</div>
+			<!--cart section-->
+			</div>
+		</div>
+	</div>
+	<div class="hearder_bottom">
+			
+		<div class="Text_Logo" style="clear:both">
+			
+			<a href="#">
+				<span>Minics</span>
+			</a>
+		</div>
+		<div class="menu" style="margin-top: 10px;">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-home" href="./index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-about" href="./about.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-products" href="./products.html">Products</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-whyus" href="./whyus.html">Why Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-testimonial" href="./testimonial.html">Testimonial</a>
+				</li>
+			</ul>
+			<div style="clear:both"></div>
+		</div>
+	</div>
+
+</header>
+
+<div style="clear:both"></div>
+
+<!--Slide show section-->
+<div class="slideshow_section">
+	<div id="custom_Carouse1" class="carousel slide pointer-event"data-ride="carousel" >
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="detail-box">
+								<h1 id="nameh1" style="transition: 1s">Welcome to our shop</h1>
+								<p id="nameP" style="transition: 1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quam velit saepe dolorem deserunt quo quidem and option.</p>
+								<a class="readmore_1">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="img_box">
+								<img name="img_feature" style="height: 300px;width: 450px; transition: 1s;"  src="images/slider-img.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="carousel_btn_box" >
+	<div onclick="Click_Control_PREV()" class="control_prev">
+		<i class="fa fa-angle-left"></i>
+	</div>
+	<div onclick="Click_Control_NEXT()" class="control_next">
+		<i class="fa fa-angle-right"></i>
+	</div>
+	<div onclick="Click_Control_START()" class="control_start">
+		<i class="fa-solid fa-play"></i>
+	</div>
+	<div onclick="Click_Control_STOP()" class="control_stop">
+		<i class="fa-solid fa-stop"></i>
+	</div>
+</div>
+
+<!--product section-->
+<div id="products" class="container product" style="margin-top: 120px;">
+	<div class="header_product pt-0">	
+		<h2>Our products</h2>
+	</div> 
+	<div class="row">
+		<div class="col-sm-6 col-lg-4">
+			<div class="box">
+				<div class="img-box">
+					<img class="img-product" src="/images/MayAnh.png" />
+					<a id="1" class="add-to-cart">
+						<span>Add to cart</span>
+					</a>
+					<a href="/ProductDetail.html" id="Detail-1" class="watch-detail" style="bottom: 61px;">
+						<span>Watch detail</span>
+					</a>
+				</div>
+				<div class="item-detail">
+					<h5>Cannon EOS 550D</h5>
+					<div class="row">
+						<h3 class="col-6">$ 300</h3>
+						<div class="col-6">
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-lg-4">
+			<div class="box">
+				<div class="img-box">
+					<img class="img-product" src="/images/TayCam.png" />
+					<a id="2" class="add-to-cart ">
+						<span>Add to cart</span>
+					</a>
+					<a href="/ProductDetail.html" id="Detail-2" class="watch-detail" style="bottom: 61px;">
+						<span>Watch detail</span>
+					</a>
+				</div>
+				<div class="item-detail">
+					<h5>IPega 9021 Bluetooth Gamepad</h5>
+					<div class="row">
+						<h3 class="col-6">$ 400</h3>
+						<div class="col-6">
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-lg-4">
+			<div class="box">
+				<div class="img-box">
+					<img class="img-product" src="/images/FlyCam.png" />
+					<a id="3" class="add-to-cart">
+						<span>Add to cart</span>
+					</a>
+					<a href="/ProductDetail.html" id="Detail-3" class="watch-detail" style="bottom: 61px;">
+						<span>Watch detail</span>
+					</a>
+				</div>
+				<div class="item-detail">
+					<h5>Flycam DJI Tello</h5>
+					<div class="row">
+						<h3 class="col-6">$ 200</h3>
+						<div class="col-6">
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6 col-lg-4">
+			<div class="box">
+				<div class="img-box">
+					<img class="img-product" src="/images/Camera.png" />
+					<a id="4" class="add-to-cart">
+						<span>Add to cart</span>
+					</a>
+					<a href="/ProductDetail.html" id="Detail-4" class="watch-detail" style="bottom: 61px;">
+						<span>Watch detail</span>
+					</a>
+				</div>
+				<div class="item-detail">
+					<h5>Canon EF 50mm</h5>
+					<div class="row">
+						<h3 class="col-6">$ 500</h3>
+						<div class="col-6">
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-lg-4">
+			<div class="box">
+				<div class="img-box">
+					<img class="img-product" src="/images/Loa.png" />
+					<a id="5" class="add-to-cart">
+						<span>Add to cart</span>
+					</a>
+					<a href="/ProductDetail.html" id="Detail-5" class="watch-detail" style="bottom: 61px;">
+						<span>Watch detail</span>
+					</a>
+				</div>
+				<div class="item-detail">
+					<h5>Yamaha HS7 Monitor Speaker</h5>
+					<div class="row">
+						<h3 class="col-6">$ 100</h3>
+						<div class="col-6">
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-lg-4">
+			<div class="box">
+				<div class="img-box">
+					<img class="img-product" src="/images/TayGame.png" />
+					<a id="6" class="add-to-cart">
+						<span>Add to cart</span>
+					</a>
+					<a href="/ProductDetail.html" id="Detail-6" class="watch-detail" style="bottom: 61px;">
+						<span>Watch detail</span>
+					</a>
+				</div>
+				<div class="item-detail">
+					<h5>HEYAPAN 2.4G Gamepad</h5>
+					<div class="row">
+						<h3 class="col-6">$ 300</h3>
+						<div class="col-6">
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6 col-lg-4">
+			<div class="box">
+				<div class="img-box">
+					<img class="img-product" src="/images/Phantom.png" />
+					<a id="7" class="add-to-cart">
+						<span>Add to cart</span>
+					</a>
+					<a href="/ProductDetail.html" id="Detail-7" class="watch-detail" style="bottom: 61px;">
+						<span>Watch detail</span>
+					</a>
+				</div>
+				<div class="item-detail">
+					<h5>UAV RTK Phantom 4</h5>
+					<div class="row">
+						<h3 class="col-6">$ 200</h3>
+						<div class="col-6">
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-lg-4">
+			<div class="box">
+				<div class="img-box">
+					<img class="img-product" src="/images/2000Camera.png" />
+					<a id="8" class="add-to-cart">
+						<span>Add to cart</span>
+					</a>
+					<a href="/ProductDetail.html" id="Detail-8" class="watch-detail" style="bottom: 61px;">
+						<span>Watch detail</span>
+					</a>
+				</div>
+				<div class="item-detail">
+					<h5>Canon EOS 2000D Camera</h5>
+					<div class="row">
+						<h3 class="col-6">$ 300</h3>
+						<div class="col-6">
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-lg-4">
+			<div class="box">
+				<div class="img-box">
+					<img class="img-product" src="/images/CCCamera.png" />
+					<a id="9" class="add-to-cart">
+						<span>Add to cart</span>
+					</a>
+					<a href="/ProductDetail.html" id="Detail-9" class="watch-detail" style="bottom: 61px;">
+						<span>Watch detail</span>
+					</a>
+				</div>
+				<div class="item-detail">
+					<h5>CC Camera</h5>
+					<div class="row">
+						<h3 class="col-6">$ 250</h3>
+						<div class="col-6">
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+							<i class="star" id="star">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+								</svg>
+							</i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row mt-3">
+		<div style="text-align:center">
+			<button class="btn-view">View more</button>
+		</div>
+	</div>
+</div>
+
+	<!--about section-->
+	<div id="about" class="content row">
+        <div class="middle_content col-md-6">
+            <div class="text_content_left">
+                <h2>We Provide Best For You</h2>
+                <p>Totam architecto rem beatae veniam, cum officiis adipisci soluta perspiciatis ipsa, expedita maiores quae accusantium. Animi veniam aperiam, necessitatibus mollitia ipsum id optio ipsa odio ab facilis sit labore officia! Repellat expedita, deserunt eum soluta rem culpa. Aut, necessitatibus cumque. Voluptas consequuntur vitae aperiam animi sint earum, ex unde cupiditate, molestias dolore quos quas possimus eveniet facilis magnam? Vero, dicta.</p>
+                <a class="read_more">Read More</a>
+            </div>
+        </div>
+        <div class="middle_content2 col-md-6 px-0">
+            <div class="img_content">
+                <img src="./images/about-img.jpg">
+            </div>
+        </div>
+    </div>
+
+    <!--why-us section-->
+    <section id="why-us" class="why_us_section">
+      <div class="container-fluid">
+        <div class="header-content">
+          <h2 class="d-flex justify-content-center" style="font-weight: bold;">Why Choose Us</h2>
+        </div>
+        <div class="d-flex justify-content-center why-content">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="why-item">
+                <div class="img-box-why d-flex justify-content-center">
+                  <img src="images/w1.png" alt="">
+                </div>
+                  <p style="font-size: 20px; font-weight: bold;">FAST DELIVERY</p>
+                  <p style="font-size: 16px;">variations of passages of Lorem Ipsum available</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="why-item">
+                <div class="img-box-why d-flex justify-content-center">
+                  <img src="images/w2.png" alt="">
+                </div>
+                  <p style="font-size: 20px; font-weight: bold;">FREE SHIPING</p>
+                  <p style="font-size: 16px;">variations of passages of Lorem Ipsum available</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="why-item">
+                <div class="img-box-why d-flex justify-content-center">
+                  <img src="images/w3.png" alt="">
+                </div>
+                  <p style="font-size: 20px; font-weight: bold;">BEST QUALITY</p>
+                  <p style="font-size: 16px;">variations of passages of Lorem Ipsum available</p> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	<section class="why_us_section">
+		<div class="container-fluid">
+		  <div class="header-content">
+			<h2 class="d-flex justify-content-center" style="font-weight: bold;">What Says Our Customers</h2>
+		  </div>
+		  <div class="why-us-comment">
+			<div class="why-us-comment-text">
+				<i class="fa fa-quote-left" aria-hidden="true" style="font-size: 20px;"></i>
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it lookIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
+			</div>
+			<div class="commentator">
+				<div class="avatar">
+					<img src="./images/client.jpg" alt="">
+				</div>
+				<h5 class="name" style="font-weight: bold;">Khang Nguyen</h5>
+				<h6 class="career">Software Engineer</h6>
+			</div>
+			<div style="clear: both;"></div>
+		  </div>
+		</div>
+	  </section>
+
+	<!--footer section-->
+    <div id="footer" style="height: 450px; width: 100%; background-color: #3a4468;">
+        <div class="footer-contact row d-flex justify-content-center">
+			<div class="infor_section col-md-3">
+				<h5>
+					<a class="infor_name" href="#">
+						<span>Minincs</span>
+					</a>
+				</h5>
+				<p>
+					<i class="fa-solid fa-location-dot"></i> Address 
+				</p>
+				<p>
+					<i class="fa-solid fa-phone"></i> +12345678910JQK
+				</p>
+				<p>
+					<i class="fa-solid fa-envelope"></i> phucdeptrai@gmail.com
+				</p>
+			</div>
+			<div class="information col-md-3">
+				<h5 style="font-size: 25px; ">Information</h5>
+				<p>
+					Eligendi sunt, provident, debitis nemo, facilis cupiditate velit libero dolorum aperiam enim nulla iste maxime corrupti ad illo libero minus.</p>
+			</div>
+			<div class="useful_link col-md-3">
+				<h5 style="font-size: 25px">Useful Link</h5>
+				<ul>
+					<li>
+						<a href="#">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							About
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Products
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Why Us
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Testimonial
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="info_form col-md-3">
+				<h5 style="font-size: 25px;">Newsletter</h5>
+				<form action="">
+					<input class="input_email" type="email" placeholder="Enter your email" >
+				</form>
+				<button class="button_subcribe">SUBCRIBE</button>
+				<div class="social_icon">
+					<a href="#">
+						<i class="fa-brands fa-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-youtube"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+        <div style="clear:both"></div>
+        <div class="the_end">
+            <hr class="hr_end">
+            <div class="container_end">
+                <p class="text_end"><i class="fa-sharp fa-solid fa-copyright"></i><span> 2023 All Rights Reserved By My Group</span></p>
+            </div>
+        </div>
+    </div>
+	<script src="./js/cart.js"></script>
+	<script src="./js/slide.js"></script>
+	<script src="./js/productDetail.js"></script>
+</body>
+</html>
+<script>
+    
+</script>

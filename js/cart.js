@@ -1,3 +1,4 @@
+import { showSuccessToast } from "./toast.js";
 /*cart section logic*/
 
 /*open, close cart modal*/
@@ -142,5 +143,8 @@ for(const btnDelete of btnDeleteProducts) {
 }
 
 for (const btnAdd of btnAddProducts) {
-  btnAdd.addEventListener('click', e => addProduct(e));
+  btnAdd.addEventListener('click', e => {
+    addProduct(e);
+    showSuccessToast();
+  });
 }
